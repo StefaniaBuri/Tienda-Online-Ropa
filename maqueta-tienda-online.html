@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Ropa</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css" crossorigin="anonymous" >
+    <link rel="stylesheet" href="./maqueta-tienda-online.css" >
+
+</head>
+<body>
+
+<header class="container-fluid bg-warning position-sticky top-0">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+   
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="" width="80">
+            </a>
+
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+
+                <ul class="nav nav-pills mb-3 py-3 container fs-6 fw-bold " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cesta</a>
+                </li>
+                </ul>
+
+            </div> 
+        </div>
+    
+    </nav>    
+</header>
+
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto añadido a la cesta!
+    </div>
+
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto eliminado de la cesta!
+    </div>
+
+
+<div class="tab-content" id="pills-tabContent">
+
+ <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+         <!-- CAROUSEL -->
+         <div id="main">
+            <div class="container">
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/blazer1.jpg" class="d-block w-25 h-25 rounded float-sm-start" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/abrigoh.jpg" class="d-block w-25 h-25" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/top.jpg" class="d-block w-25 h-25" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/peto.jpg" class="d-block w-25 h-25" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    <!-- SEPARADOR -->
+    <div id="separator-ribbon">
+        <div class="content bg-info"></div>
+    </div>
+
+ </div>
+        
+ <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+        <!-- PRODUCTOS -->
+    <section>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active container" id="pills-productos" role="tabpanel" aria-labelledby="pills-productos-tab">
+        <h2 class="h3 text-white fw-bold">PRODUCTOS</h2>
+    
+            <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
+             
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Abrigo polar con bolsillos </h5>
+                        <img src="./img/polar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Detalles: Botón, Cremallera, Bolsillo,color Caqui,
+                                Tejido:	No-Elástico, 100% Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">39,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Camisa con botón delantero</h5>
+                        <img src="./img/blusa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Estampado: Liso,
+                                Detalles: Botón delantero, Túnica, Algodón,
+                                Temporada:	Primavera/Otoño,
+                                Instrucciones de Cuidado:	lavadora o limpieza en seco profesional
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">11,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Body de cuello cruzado fruncido </h5>
+                        <img src="./img/body.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Elegante,
+                                Color:	Bermellón,
+                                Temporada:	Primavera/Otoño,
+                                Detalles:	Envolvente, Drapeado,
+                                Escote:	cuello en 'v' o pico profundo,
+                                Composición:	95% Poliéster, 5% spandex
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">12,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Cazadora con estampado de cuadros </h5>
+                        <img src="./img/cazadora.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Color:	Blanco y Negro,
+                                Tipo de Estampado:	A cuadros,
+                                Temporada:	Otoño/Invierno,
+                                Material:	Poliéster,
+                                Tejido:	Elástico Ligero
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">15,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Pantalones deportivos </h5>
+                        <img src="./img/pdeportivo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Color: Gris,
+                                Tipo de Estampado: Liso,
+                                Detalles: Bolsillo,
+                                Tejido:	Elástico Ligero, Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">10,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Vaqueros de talle alto cuero </h5>
+                        <img src="./img/pantalones.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Color: Negro,
+                                Tipo de Estampado: Liso,
+                                Detalles:	Botón, Bolsillo, Cremallera,
+                                Material:	Denim /Vaquero
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">17,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Conjunto Top y pantalon brillante</h5>
+                        <img src="./img/top-pant.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Color:	Negro,
+                                Estilo:	Sexy,
+                                Detalles:	Asimétrico,
+                                Temporada:	Primavera/Verano,
+                                Tejido:	Elástico Ligero,
+                                Material:	Brillante
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">19,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Falda de muslo con abertura</h5>
+                        <img src="./img/falda.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Elegante
+                                Color:	Negro, Liso, Largo
+                                Temporada:	Primavera/Verano/Otoño
+                                Detalles:	Abertura alta
+                                Material:	Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">9,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Vestido smock con estampado</h5>
+                        <img src="./img/vestido1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Dulce,
+                                Tipo de Estampado: Guingán,
+                                Detalles: Volante rígido,
+                                Línea del Talle de la Cintura: Natural,
+                                Material: Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">15,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Camiseta con estampado </h5>
+                        <img src="./img/camiseta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Preppy,
+                                Color: Negro,
+                                Tipo de Estampado: Letras,
+                                Largo:	Normal,
+                                Temporada: Verano,
+                                Detalles: Parches
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">11,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Hombres Capucha astronauta</h5>
+                        <img src="./img/sudaderaxico.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Preppy
+                                Color:	Negro,
+                                Tipo de Estampado:	Dibujos animados,
+                                Largo:	Normal,
+                                Temporada:	Primavera/Otoño,
+                                Tipo:	Pullovers
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">13,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white"> Hombres Vaqueros rotos </h5>
+                        <img src="./img/vaquero.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Color:	Jeans
+                                Tipo:	Pantalón pitillo
+                                Detalles:	Desgarro, Botón
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">22,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Pantalones deportivos</h5>
+                        <img src="./img/chandal.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Color:	Multicolor,
+                                Temporada:	Primavera/Otoño,
+                                Tipo de Bottom:	Pantalones deportivos,
+                                Detalles:	Cordón, Lazo delantero
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">17,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Abrigo con bolsillos </h5>
+                        <img src="./img/abrigoh.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Detalles: Botón, Cremallera, Bolsillo,color Gris,
+                                Tejido:	No-Elástico, 100% Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">28,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Hombres Cazadora sin capucha</h5>
+                        <img src="./img/abrigo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Casual,
+                                Detalles: Botón, Cremallera, Bolsillo,color Negro,
+                                Tejido:	No-Elástico, 100% Poliéster
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">35,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col d-flex justify-content-center-mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width:20rem;">
+                        <h5 class="card-title pt-2 text-center text-white">Cazadora tipo bomber</h5>
+                        <img src="./img/cazadora12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">
+                                Descripción: 
+                                Estilo:	Calle,
+                                Color:	Negro,
+                                Temporada:	Otoño/Invierno,
+                                Tipo:	Bómber,
+                                Detalles:	Bolsillo, Cremallera
+                            </p>
+                            <h5 class="text-primary">Precio: <span class="precio">31,00 €</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a la Cesta</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+    <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <br>
+        <table class="table">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col">Productos</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              
+             
+          
+              
+            </tbody>
+          </table>
+          <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal">Total: 0 </h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success">Comprar</button>
+                </div>
+            </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+ 
+<footer class="bg-dark p-3 mt-5">
+    <p class="text-center m-0 text-muted">LOVELY CLOTHES ONLINE SHOP</p>
+</footer>
+
+
+
+
+<!-- FOOTER -->
+
+<script src="/bootstrap.min.js"></script>
+<script src="/bootstrap.bundle.js"></script>
+<script src="/bootstrap.bundle.min.js"></script>
+
+ <!-- Option Css  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<script src="./tienda-ropa.js"></script>
+</body>
+</html>
