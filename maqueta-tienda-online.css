@@ -23,7 +23,7 @@ header{
 
 #separator-ribbon .content{
     width: 100%;
-    height: 60px;
+    height: 80px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
@@ -43,8 +43,9 @@ h2{
 .description{
     height: 25px;
     overflow: hidden;
-    transition: height .3s ease-in .3s;
+    transition: height .2s ease-in .2s;
 }
+
 .description:hover{
     height: 90px;
 }
@@ -60,7 +61,7 @@ h2{
     display: flex;
 }
 .table__productos > img{
-    width: 9rem;
+    width: 4rem;
     object-fit: contain;
     border-radius: 6px;
     margin-right: 20px;

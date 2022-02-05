@@ -1,4 +1,3 @@
-
 const Clickbutton = document.querySelectorAll('.button');
 // console.log(Clickbutton);
 const tbody = document.querySelector('.tbody')
@@ -95,13 +94,16 @@ function CestaTotal(){
     const itemCartTotal = document.querySelector('.itemCartTotal')
 
     cesta.forEach((item) => {
-        
-         const precio = Number(item.precio.replace("€",""))
+        // console.log(item.precio);
+        // console.log(item.precio.replace("€",""));
+         const precio = Number(item.precio.replace("€", ''))
+        //  console.log(precio);
          Total = Total + precio*item.cantidad 
     });
-    itemCartTotal.innerHTML = `Total ${Total}€`
+    itemCartTotal.innerHTML = `Total: ${Total}€`
     addLocalStorage()
 }
+
 
 
 
@@ -114,10 +116,9 @@ function removeItemCesta(e){
 
         if(cesta[i].title.trim() === title.trim()){
             cesta.splice(i, 1)
-            // console.log("hola prueba quitar item");
+            // console.log("prueba quitar item");
         }
     }
-
 
     const alert = document.querySelector('.remove')
 
